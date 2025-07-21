@@ -1,26 +1,35 @@
+import java.util.Scanner;
+
 public class fact {
-    public static void main(String[] args) {
-        // recursion(5);
-        printDescending(5);
+
+    /*public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number: ");
+        int n = sc.nextInt();
+        System.out.print("Sum of first "+n+" numbers are: ");
+        factorial(n);
+        sc.close();
     }
 
-   /*/ public static void recursion(int n) {
-        if(n == 0) {
-            return;
-        }
-        // System.out.println(n);  // Printing in Descending order
-        recursion(n-1);
-        System.out.println(n);  // Printing in Ascending order
-    } */
+    public static void factorial(int n) {
+        int sum = 0;
+        sum += n*(n-1)/2;
+        System.out.println(sum);
+    }*/
 
+    public static void main(String[] args) {
 
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number: ");
+        int n = sc.nextInt();
 
+        int result = factorial(n);
+        System.out.println("Factorial of "+n+ " is: "+result);
+    }
 
-    public static void printDescending(int n) {
-        if ( n == 0) {
-            return ;
-        }
-        System.out.print(n + " ");
-        printDescending(n - 1);
+    public static int factorial(int n) {
+        if(n == 1) return 1;
+        // System.out.print(n + " ");
+        return n * factorial(n - 1);
     }
 }
