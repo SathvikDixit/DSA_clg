@@ -21,5 +21,4 @@ public class exponentioal {
         if (q <= 1) return p;
         return p*pow(p,q-1);
     }
-
 }
