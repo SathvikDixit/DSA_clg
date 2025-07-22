@@ -13,12 +13,17 @@ public class exponentioal {
 
     public static void main(String[] args) {
         int p = 2, q = 3;
-        int ans = pow(p, q);
-        System.out.println(ans);
+        int result = pow(p, q);
+        System.out.println(result);
     }
 
     public static int pow (int p, int q) {
-        if (q <= 1) return p;
-        return p*pow(p,q-1);
+        if(q == 0) return 1;
+        // if (q <= 1) return p;
+        // return p*pow(p,q-1);     // O(n)
+
+        int ans = pow(p, q/2);
+        if (q%2 != 0) return ans * ans * p;
+        else return ans * ans;
     }
 }
