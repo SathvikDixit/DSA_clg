@@ -1,6 +1,6 @@
 public class findMaxAndMin {
     public static void main(String[] args) {
-        int[] arr = {5, 1, 9, 3, 7, 0};
+        int[] arr = {5, 1, 999, 3, -1, 0};
         maxMin(arr);
     }
     public static void maxMin (int[] arr) {
