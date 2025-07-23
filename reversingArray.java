@@ -22,3 +22,4 @@ public class reversingArray {
         arr1[i] = temp;
     }
 }
+ 
