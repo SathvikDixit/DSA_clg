@@ -4,7 +4,7 @@ public class binarySearch {
         int low = 0, high = n - 1;
 
         if(arr == null || arr.length == 0)  {
-            System.out.print("Btch yo array is empty ");
+            System.out.println("Btch yo array is empty ");
             return -1;
         }
         while (low <= high) {
@@ -20,6 +20,6 @@ public class binarySearch {
         int[] arr = {  };
         int target = 6;
         int ans = binSearch(arr, target);
-        System.out.println(""+ans);
+        System.out.println("The target element is present at index "+ans);
     }
 }
