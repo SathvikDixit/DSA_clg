@@ -1,4 +1,3 @@
-import java.util.Arrays;
 
 public class bubbleSort {
     public static void main(String[] args) {
@@ -8,7 +7,7 @@ public class bubbleSort {
     public static void bubble(int[] arr) {
         int n = arr.length, i;
         int j;
-        for (i = 0; i < n; i++) {
+        for (i = 0; i < n-1; i++) {
             for(j = 0; j < n-i-1; j++) {
                 if(arr[j] > arr[j+1]) {
                     int temp = arr[j];
