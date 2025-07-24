@@ -1,3 +1,5 @@
+// HackerRank CTC technical quesitons
+
 import java.util.Scanner;
 
 public class problem1 {
