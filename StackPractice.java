@@ -44,6 +44,7 @@ public class StackPractice {
             st.pop();
         }
         System.out.println("I'm printing your 3rd value from st: "+st.peek());
+        st.push(99);
         while (!st1.isEmpty()) {
             st.push(st1.peek());
             st1.pop();
