@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class problem1 {
@@ -29,5 +28,7 @@ public class problem1 {
             }
         }
         System.out.println(sum);
+
+        sc.close();
     }
 }
